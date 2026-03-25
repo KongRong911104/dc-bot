@@ -28,9 +28,11 @@ pip install -r requirements.txt
 cp .env.example .env
 nano .env
 ```
-WEATHER_API 是中央氣象局的/v1/rest/datastore/F-D0047-093  
-必填 Authorization 、 locationId 、 LocationName 、ElementName的天氣預報綜合描述、12小時降雨機率、紫外線指數  
-DISCORD_CHANNEL_ID 是 預報的頻道
+**WEATHER_API** 是中央氣象局的/v1/rest/datastore/F-D0047-093  
+必填 Authorization 、 locationId 、 LocationNam 、ElementName的天氣預報綜合描述、12小時降雨機率、紫外線指數  
+
+**DISCORD_CHANNEL_ID** 是 預報的頻道  
+
 ## 3. 設定 Systemd 服務
 
 建立一個新的服務檔案 `/etc/systemd/system/discord-bot.service`：
