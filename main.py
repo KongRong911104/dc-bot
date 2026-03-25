@@ -187,7 +187,7 @@ async def get_weather_data():
     從中央氣象署 API 獲取天氣資料邏輯
     """
     now = datetime.datetime.now(TAIWAN_TZ).strftime("%Y-%m-%d")
-    url = WEATHER_API+f"{now}T06%3A00%3A00&timeTo={now}T10%3A00%3A00"
+    url = WEATHER_API+f"&timeFrom={now}T06%3A00%3A00&timeTo={now}T10%3A00%3A00"
     results = []
     try:
         async with aiohttp.ClientSession() as session:
