@@ -31,7 +31,7 @@ nano .env
 **WEATHER_API** 是中央氣象局的/v1/rest/datastore/F-D0047-093  
 必填 Authorization 、 locationId 、 LocationNam 、ElementName的天氣預報綜合描述、12小時降雨機率、紫外線指數  
 
-**DISCORD_CHANNEL_ID** 是 預報的頻道  
+**DISCORD_CHANNEL_ID** 是氣象預報的頻道  
 
 ## 3. 設定 Systemd 服務
 
