@@ -4,3 +4,8 @@ python-dotenv
 aiohttp
 beautifulsoup4
 lxml
+psutil 
+ollama
+nvidia-ml-py
+feedparser
+PyNaCl

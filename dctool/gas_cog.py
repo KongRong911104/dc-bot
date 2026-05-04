@@ -21,10 +21,10 @@ class GasCog(commands.Cog):
     def cog_unload(self):
         self.sunday_gas_task.cancel()
 
-    @tasks.loop(time=datetime.time(hour=12, minute=10, tzinfo=TAIWAN_TZ))
+    @tasks.loop(time=datetime.time(hour=13, minute=0, tzinfo=TAIWAN_TZ))
     async def sunday_gas_task(self):
         """
-        每週日 12:10 執行油價提醒
+        每週日 13:00 執行油價提醒
         """
         # 僅在週日執行 (weekday == 6)
         if datetime.datetime.now(TAIWAN_TZ).weekday() != 6:
