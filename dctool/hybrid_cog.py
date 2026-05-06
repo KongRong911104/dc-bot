@@ -105,7 +105,7 @@ class HybridAICog(commands.Cog):
                 images.append(img_data)
 
         # 決定模型：有圖用 vision，沒圖用 phi4
-        target_model = "llama3.2-vision" if images else "gemma4:e4b"
+        target_model = "gemma4:e4b" if images else "gemma4:e4b"
         
         # 呼叫 Ollama API (非阻塞)
         response = await asyncio.to_thread(
